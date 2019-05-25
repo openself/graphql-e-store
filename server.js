@@ -14,15 +14,18 @@ const resolvers = {
         greeting: () => 'Welcome!'
     }
 }
-const server = new ApolloServer({ typeDefs, resolvers })
+const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    introspection: true,
+    playground: true,
+})
 
 const app = express()
 
 server.applyMiddleware({ app })
 
-// The GraphQL endpoint
 app.use(
-    "/graphql",
     cors(),
     bodyParser.json()
 )
