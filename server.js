@@ -17,8 +17,15 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers })
 
 const app = express()
+
 server.applyMiddleware({ app })
-app.use(cors(), bodyParser.json())
+
+// The GraphQL endpoint
+app.use(
+    "/graphql",
+    cors(),
+    bodyParser.json()
+)
 app.listen(process.env.PORT || port, () => {
     console.log(`Server started on port: ${process.env.PORT || port}${server.graphqlPath}`)
 })
