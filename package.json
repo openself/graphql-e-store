@@ -1,0 +1,24 @@
+{
+  "name": "graphql-1",
+  "version": "1.0.0",
+  "description": "Homework 10 for OTUS Modern JavaScript Framework course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Borisov",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "apollo-server-express": "^2.5.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "graphql": "^14.3.1"
+  },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.9.0"
+  }
+}
