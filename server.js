@@ -2,7 +2,7 @@ const { ApolloServer, gql } = require('apollo-server-express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const express = require('express')
-const port = 443
+const port = 8000
 
 const typeDefs = gql`
     type Query {
