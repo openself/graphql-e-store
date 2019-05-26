@@ -11,9 +11,9 @@ const OrderSchema = db.Schema({
     orderDate: String,
     orderNum: String,
     status: Number,
-    user: [{type: db.Schema.Types.Object, ref: 'User'}],
+    user: String,
     comment: String,
-    product: {type: db.Schema.Types.Object, ref: 'Product'},
+    product: String,
     quantity: Number
 })
 
@@ -21,7 +21,7 @@ const ProductSchema = db.Schema({
     name: String,
     price: Number,
     description: String,
-    category: {type: db.Schema.Types.Object, ref: 'Category'}
+    category: String
 })
 
 const UserSchema = db.Schema({

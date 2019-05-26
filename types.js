@@ -65,7 +65,7 @@ const typeDefs = `
         name: String!
         price: Int!
         description: String,
-        category: ID
+        category: String
     }
     
     # Product new input
@@ -73,7 +73,7 @@ const typeDefs = `
         name: String!
         price: Int!
         description: String,
-        category: ID
+        category: String
     }
     
     # Product update input
@@ -83,7 +83,7 @@ const typeDefs = `
         name: String!
         price: Int!
         description: String,
-        category: ID
+        category: String
     }
     
     # Order
@@ -93,10 +93,10 @@ const typeDefs = `
         orderDate: String!,
         orderNum: String!,
         status: Int,
-        user: ID!,
+        user: String!,
         comment: String,
-        product: ID,
-        quantity: Int
+        product: String!,
+        quantity: Int!
     }
     
     # Order new input
@@ -104,9 +104,9 @@ const typeDefs = `
         orderDate: String!,
         orderNum: String!,
         status: Int,
-        user: ID!,
+        user: String!,
         comment: String,
-        product: ID!,
+        product: String!,
         quantity: Int!
     }
     
@@ -117,9 +117,9 @@ const typeDefs = `
         orderDate: String!,
         orderNum: String!,
         status: Int,
-        user: ID!,
+        user: String!,
         comment: String,
-        product: ID!,
+        product: String!,
         quantity: Int!
     }
 
