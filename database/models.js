@@ -8,7 +8,7 @@ const CategorySchema = db.Schema({
 })
 
 const OrderSchema = db.Schema({
-    orderDate: Date,
+    orderDate: String,
     status: Number,
     user: [{type: db.Schema.Types.Object, ref: 'User'}],
     comment: String,

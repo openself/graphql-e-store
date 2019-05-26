@@ -90,7 +90,7 @@ const typeDefs = `
     type Order {
         # The ID of this entry
         id: ID!
-        orderDate: Date!,
+        orderDate: String!,
         status: Int,
         user: ID!,
         comment: String,
@@ -100,7 +100,7 @@ const typeDefs = `
     
     # Order new input
         input NewOrderInput {
-        orderDate: Date!,
+        orderDate: String!,
         status: Int,
         user: ID!,
         comment: String,
@@ -112,7 +112,7 @@ const typeDefs = `
         input UpdateOrderInput {
         # The ID of this entry
         id: ID!
-        orderDate: Date!,
+        orderDate: String!,
         status: Int,
         user: ID!,
         comment: String,
