@@ -19,7 +19,7 @@ const OrderSchema = db.Schema({
 const ProductSchema = db.Schema({
     name: String,
     price: Number,
-    decription: String,
+    description: String,
     category: {type: db.Schema.Types.Object, ref: 'Category'}
 })
 

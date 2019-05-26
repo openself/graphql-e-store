@@ -64,7 +64,7 @@ const typeDefs = `
         id: ID!
         name: String!
         price: Int!
-        decription: String,
+        description: String,
         category: Category
     }
     
@@ -72,7 +72,7 @@ const typeDefs = `
         input NewProductInput {
         name: String!
         price: Int!
-        decription: String,
+        description: String,
         category: ID
     }
     
@@ -82,7 +82,7 @@ const typeDefs = `
         id: ID!
         name: String!
         price: Int!
-        decription: String,
+        description: String,
         category: ID
     }
     
