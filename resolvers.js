@@ -73,7 +73,7 @@ const resolvers = {
         },
 
         updateOrder: async (root, {order}) => {
-            const orderId = user.id
+            const orderId = order.id
             return await Order.findByIdAndUpdate(orderId, order,
                 {new: true, useFindAndModify: false})
         },
