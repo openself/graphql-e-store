@@ -91,6 +91,7 @@ const typeDefs = `
         # The ID of this entry
         id: ID!
         orderDate: String!,
+        orderNum: String!,
         status: Int,
         user: ID!,
         comment: String,
@@ -101,6 +102,7 @@ const typeDefs = `
     # Order new input
         input NewOrderInput {
         orderDate: String!,
+        orderNum: String!,
         status: Int,
         user: ID!,
         comment: String,
@@ -113,6 +115,7 @@ const typeDefs = `
         # The ID of this entry
         id: ID!
         orderDate: String!,
+        orderNum: String!,
         status: Int,
         user: ID!,
         comment: String,

@@ -9,6 +9,7 @@ const CategorySchema = db.Schema({
 
 const OrderSchema = db.Schema({
     orderDate: String,
+    orderNum: String,
     status: Number,
     user: [{type: db.Schema.Types.Object, ref: 'User'}],
     comment: String,
