@@ -65,7 +65,7 @@ const typeDefs = `
         name: String!
         price: Int!
         description: String,
-        category: Category
+        category: ID
     }
     
     # Product new input
