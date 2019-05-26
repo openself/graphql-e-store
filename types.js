@@ -114,13 +114,13 @@ const typeDefs = `
         input UpdateOrderInput {
         # The ID of this entry
         id: ID!
-        orderDate: String!,
-        orderNum: String!,
+        orderDate: String,
+        orderNum: String,
         status: Int,
-        user: String!,
+        user: String,
         comment: String,
-        product: String!,
-        quantity: Int!
+        product: String,
+        quantity: Int
     }
 
     type Query {
